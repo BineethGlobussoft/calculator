@@ -4,18 +4,17 @@
     <title>PHP Calculator</title>
 </head>
 <body>
-    <h1>Simple Calculator</h1>
-    <form method="POST" action="calculate.php">
-        <input type="number" name="num1" required>
+    <h1>Simple PHP Calculator</h1>
+    <form action="calculate.php" method="post">
+        <input type="number" name="num1" placeholder="Enter first number">
+        <input type="number" name="num2" placeholder="Enter second number">
         <select name="operation">
-            <option value="add">+</option>
-            <option value="subtract">-</option>
-            <option value="multiply">*</option>
-            <option value="divide">/</option>
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
         </select>
-        <input type="number" name="num2" required>
-        <button type="submit">Calculate</button>
+        <input type="submit" value="Calculate">
     </form>
 </body>
 </html>
-
